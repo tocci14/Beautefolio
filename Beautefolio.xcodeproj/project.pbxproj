@@ -8,12 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		44378E5E1EEFAD8B008E2846 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44378E5D1EEFAD8B008E2846 /* GoogleService-Info.plist */; };
-		44378E621EF116FD008E2846 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44378E611EF116FD008E2846 /* MainViewController.swift */; };
-		44378E641EF117AA008E2846 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44378E631EF117AA008E2846 /* LeftViewController.swift */; };
-		44378E681EF215BD008E2846 /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44378E671EF215BD008E2846 /* ReservationViewController.swift */; };
-		44378E6A1EF215DD008E2846 /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44378E691EF215DD008E2846 /* RecordViewController.swift */; };
-		44378E6C1EF215FB008E2846 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44378E6B1EF215FB008E2846 /* SettingViewController.swift */; };
-		44378E721EF218F0008E2846 /* CounselingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44378E711EF218F0008E2846 /* CounselingViewController.swift */; };
 		44378E841EF2197F008E2846 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44378E741EF2197F008E2846 /* AppDelegate.swift */; };
 		44378E851EF2197F008E2846 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44378E751EF2197F008E2846 /* Assets.xcassets */; };
 		44378E861EF2197F008E2846 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44378E761EF2197F008E2846 /* LaunchScreen.storyboard */; };
@@ -28,24 +22,27 @@
 		44378E8F1EF2197F008E2846 /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44378E811EF2197F008E2846 /* ReservationViewController.swift */; };
 		44378E901EF2197F008E2846 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44378E821EF2197F008E2846 /* SettingViewController.swift */; };
 		44378E911EF2197F008E2846 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44378E831EF2197F008E2846 /* ViewController.swift */; };
+		444D13D41EF23B530004B0EC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D13D31EF23B530004B0EC /* MainViewController.swift */; };
+		444D13D61EF23C080004B0EC /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D13D51EF23C080004B0EC /* LeftViewController.swift */; };
+		444D13D81EF242BE0004B0EC /* SubContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D13D71EF242BE0004B0EC /* SubContentsViewController.swift */; };
+		444D13DA1EF243160004B0EC /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D13D91EF243160004B0EC /* HomeViewController.swift */; };
+		444D13DC1EF2432A0004B0EC /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D13DB1EF2432A0004B0EC /* ReservationViewController.swift */; };
+		444D13DE1EF243380004B0EC /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D13DD1EF243380004B0EC /* RecordViewController.swift */; };
+		444D13E01EF243470004B0EC /* CounselingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D13DF1EF243470004B0EC /* CounselingViewController.swift */; };
+		444D13E21EF243540004B0EC /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D13E11EF243540004B0EC /* SettingViewController.swift */; };
+		444D13E41EF247080004B0EC /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D13E31EF247080004B0EC /* BaseTableViewCell.swift */; };
+		444D13E61EF2476D0004B0EC /* DataTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444D13E51EF2476D0004B0EC /* DataTableView.swift */; };
 		447055931EEE2D32001D1116 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447055921EEE2D32001D1116 /* AppDelegate.swift */; };
 		447055951EEE2D32001D1116 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447055941EEE2D32001D1116 /* ViewController.swift */; };
 		447055981EEE2D32001D1116 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 447055961EEE2D32001D1116 /* Main.storyboard */; };
 		4470559A1EEE2D32001D1116 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 447055991EEE2D32001D1116 /* Assets.xcassets */; };
 		4470559D1EEE2D32001D1116 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4470559B1EEE2D32001D1116 /* LaunchScreen.storyboard */; };
 		447055A51EEE2E75001D1116 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447055A41EEE2E75001D1116 /* LoginViewController.swift */; };
-		447055A71EEE2EB0001D1116 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447055A61EEE2EB0001D1116 /* HomeViewController.swift */; };
 		E4930DAFA975B0FA0E51C3CE /* Pods_Beautefolio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687E82B717F57FCD38E66951 /* Pods_Beautefolio.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		44378E5D1EEFAD8B008E2846 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		44378E611EF116FD008E2846 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		44378E631EF117AA008E2846 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
-		44378E671EF215BD008E2846 /* ReservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationViewController.swift; sourceTree = "<group>"; };
-		44378E691EF215DD008E2846 /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
-		44378E6B1EF215FB008E2846 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
-		44378E711EF218F0008E2846 /* CounselingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounselingViewController.swift; sourceTree = "<group>"; };
 		44378E741EF2197F008E2846 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44378E751EF2197F008E2846 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44378E771EF2197F008E2846 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +57,16 @@
 		44378E811EF2197F008E2846 /* ReservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationViewController.swift; sourceTree = "<group>"; };
 		44378E821EF2197F008E2846 /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		44378E831EF2197F008E2846 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		444D13D31EF23B530004B0EC /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		444D13D51EF23C080004B0EC /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		444D13D71EF242BE0004B0EC /* SubContentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SubContentsViewController.swift; sourceTree = "<group>"; };
+		444D13D91EF243160004B0EC /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		444D13DB1EF2432A0004B0EC /* ReservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationViewController.swift; sourceTree = "<group>"; };
+		444D13DD1EF243380004B0EC /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		444D13DF1EF243470004B0EC /* CounselingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounselingViewController.swift; sourceTree = "<group>"; };
+		444D13E11EF243540004B0EC /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		444D13E31EF247080004B0EC /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		444D13E51EF2476D0004B0EC /* DataTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTableView.swift; sourceTree = "<group>"; };
 		4470558F1EEE2D32001D1116 /* Beautefolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beautefolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		447055921EEE2D32001D1116 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		447055941EEE2D32001D1116 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,7 +75,6 @@
 		4470559C1EEE2D32001D1116 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4470559E1EEE2D32001D1116 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		447055A41EEE2E75001D1116 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		447055A61EEE2EB0001D1116 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		687E82B717F57FCD38E66951 /* Pods_Beautefolio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beautefolio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B38E49CAE22A47106C0F47B /* Pods-Beautefolio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beautefolio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Beautefolio/Pods-Beautefolio.debug.xcconfig"; sourceTree = "<group>"; };
 		6D78754329BF6ECED7306ACE /* Pods-Beautefolio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beautefolio.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beautefolio/Pods-Beautefolio.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,18 +135,21 @@
 			isa = PBXGroup;
 			children = (
 				44378E5D1EEFAD8B008E2846 /* GoogleService-Info.plist */,
-				447055921EEE2D32001D1116 /* AppDelegate.swift */,
-				447055941EEE2D32001D1116 /* ViewController.swift */,
 				447055961EEE2D32001D1116 /* Main.storyboard */,
-				44378E671EF215BD008E2846 /* ReservationViewController.swift */,
-				44378E691EF215DD008E2846 /* RecordViewController.swift */,
-				44378E6B1EF215FB008E2846 /* SettingViewController.swift */,
-				44378E711EF218F0008E2846 /* CounselingViewController.swift */,
-				44378E731EF2197F008E2846 /* Beautefolio */,
-				44378E631EF117AA008E2846 /* LeftViewController.swift */,
-				44378E611EF116FD008E2846 /* MainViewController.swift */,
-				447055A61EEE2EB0001D1116 /* HomeViewController.swift */,
+				444D13D51EF23C080004B0EC /* LeftViewController.swift */,
+				444D13D31EF23B530004B0EC /* MainViewController.swift */,
+				444D13D71EF242BE0004B0EC /* SubContentsViewController.swift */,
+				444D13D91EF243160004B0EC /* HomeViewController.swift */,
+				444D13DB1EF2432A0004B0EC /* ReservationViewController.swift */,
+				444D13DD1EF243380004B0EC /* RecordViewController.swift */,
+				444D13DF1EF243470004B0EC /* CounselingViewController.swift */,
+				444D13E11EF243540004B0EC /* SettingViewController.swift */,
 				447055A41EEE2E75001D1116 /* LoginViewController.swift */,
+				447055941EEE2D32001D1116 /* ViewController.swift */,
+				444D13E51EF2476D0004B0EC /* DataTableView.swift */,
+				444D13E31EF247080004B0EC /* BaseTableViewCell.swift */,
+				447055921EEE2D32001D1116 /* AppDelegate.swift */,
+				44378E731EF2197F008E2846 /* Beautefolio */,
 				447055991EEE2D32001D1116 /* Assets.xcassets */,
 				4470559B1EEE2D32001D1116 /* LaunchScreen.storyboard */,
 				4470559E1EEE2D32001D1116 /* Info.plist */,
@@ -295,24 +304,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				44378E8C1EF2197F008E2846 /* LoginViewController.swift in Sources */,
+				444D13D41EF23B530004B0EC /* MainViewController.swift in Sources */,
 				44378E911EF2197F008E2846 /* ViewController.swift in Sources */,
+				444D13E61EF2476D0004B0EC /* DataTableView.swift in Sources */,
+				444D13E01EF243470004B0EC /* CounselingViewController.swift in Sources */,
+				444D13E41EF247080004B0EC /* BaseTableViewCell.swift in Sources */,
+				444D13DE1EF243380004B0EC /* RecordViewController.swift in Sources */,
 				44378E841EF2197F008E2846 /* AppDelegate.swift in Sources */,
 				447055A51EEE2E75001D1116 /* LoginViewController.swift in Sources */,
+				444D13D81EF242BE0004B0EC /* SubContentsViewController.swift in Sources */,
+				444D13D61EF23C080004B0EC /* LeftViewController.swift in Sources */,
 				44378E8E1EF2197F008E2846 /* RecordViewController.swift in Sources */,
 				447055951EEE2D32001D1116 /* ViewController.swift in Sources */,
 				44378E901EF2197F008E2846 /* SettingViewController.swift in Sources */,
 				447055931EEE2D32001D1116 /* AppDelegate.swift in Sources */,
+				444D13DA1EF243160004B0EC /* HomeViewController.swift in Sources */,
 				44378E8B1EF2197F008E2846 /* LeftViewController.swift in Sources */,
-				44378E6A1EF215DD008E2846 /* RecordViewController.swift in Sources */,
-				44378E641EF117AA008E2846 /* LeftViewController.swift in Sources */,
-				44378E6C1EF215FB008E2846 /* SettingViewController.swift in Sources */,
+				444D13E21EF243540004B0EC /* SettingViewController.swift in Sources */,
 				44378E8D1EF2197F008E2846 /* MainViewController.swift in Sources */,
-				447055A71EEE2EB0001D1116 /* HomeViewController.swift in Sources */,
-				44378E681EF215BD008E2846 /* ReservationViewController.swift in Sources */,
-				44378E621EF116FD008E2846 /* MainViewController.swift in Sources */,
-				44378E721EF218F0008E2846 /* CounselingViewController.swift in Sources */,
 				44378E891EF2197F008E2846 /* HomeViewController.swift in Sources */,
 				44378E8F1EF2197F008E2846 /* ReservationViewController.swift in Sources */,
+				444D13DC1EF2432A0004B0EC /* ReservationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
