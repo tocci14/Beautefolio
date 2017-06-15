@@ -16,21 +16,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        var storyboard = UIStoryboard(name: "Home", bundle: nil)
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        // Override point for customization after application launch.
+        FIRApp.configure()
         
-        let homeViewController = storyboard.instantiateViewControllerWithIdentifier("HomeViewController") as! HomeViewController
-        let leftViewController = storyboard.instantiateViewControllerWithIdentifier("LeftViewController") as! LeftViewController
-        //let rightViewController = storyboard.instantiateViewControllerWithIdentifier("RightViewController") as! RightViewController
+        //let mainViewController = storyboard.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+        //let leftMenuViewController = storyboard.instantiateViewController(withIdentifier: "LeftMenuViewController") as! LeftMenuViewController
         
-        let nvc: UINavigationController = UINavigationController(rootViewController: homeViewController)
         
-        leftViewController.homeViewController = nvc
+        //let nvc: UINavigationController = UINavigationController(rootViewController: mainViewController)
         
-        let slideMenuController = SlideMenuController(mainViewController:nvc, leftMenuViewController: leftViewController, rightMenuViewController: rightViewController)
+        // leftMenuViewController.MainViewController = nvc
+        
+        //let slideMenuController = SlideMenuController(mainViewController:nvc, leftMenuViewController: leftMenuViewController)
         
         self.window?.backgroundColor = UIColor(red: 236.0, green: 238.0, blue: 241.0, alpha: 1.0)
-        self.window?.rootViewController = slideMenuController
+        //self.window?.rootViewController = slideMenuController
         self.window?.makeKeyAndVisible()
         return true
     }
