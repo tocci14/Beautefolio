@@ -9,6 +9,7 @@
 import Firebase
 import FirebaseAuth
 import UIKit
+import SlideMenuControllerSwift
 
 class ViewController: UIViewController {
 

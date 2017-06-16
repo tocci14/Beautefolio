@@ -17,6 +17,14 @@
 		44D7BD011EF2571A005EC599 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D7BD001EF2571A005EC599 /* LeftMenuViewController.swift */; };
 		44D7BD031EF257D8005EC599 /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D7BD021EF257D8005EC599 /* SlideViewController.swift */; };
 		44D7BD051EF258F9005EC599 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D7BD041EF258F9005EC599 /* MainViewController.swift */; };
+		44FCEC121EF36B650041599B /* CounselingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FCEC031EF36B650041599B /* CounselingViewController.swift */; };
+		44FCEC181EF36B650041599B /* RecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FCEC091EF36B650041599B /* RecordViewController.swift */; };
+		44FCEC191EF36B650041599B /* ReservationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FCEC0A1EF36B650041599B /* ReservationViewController.swift */; };
+		44FCEC1A1EF36B650041599B /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FCEC0B1EF36B650041599B /* SettingViewController.swift */; };
+		44FCEC1E1EF36EA30041599B /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FCEC1D1EF36EA30041599B /* BaseTableViewCell.swift */; };
+		44FCEC201EF36FC70041599B /* DataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FCEC1F1EF36FC70041599B /* DataTableViewCell.swift */; };
+		44FCEC231EF3739C0041599B /* DataViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44FCEC221EF3739C0041599B /* DataViewCell.xib */; };
+		44FCEC251EF3896F0041599B /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FCEC241EF3896F0041599B /* UIViewController.swift */; };
 		E4930DAFA975B0FA0E51C3CE /* Pods_Beautefolio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687E82B717F57FCD38E66951 /* Pods_Beautefolio.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +41,14 @@
 		44D7BD001EF2571A005EC599 /* LeftMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
 		44D7BD021EF257D8005EC599 /* SlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideViewController.swift; sourceTree = "<group>"; };
 		44D7BD041EF258F9005EC599 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		44FCEC031EF36B650041599B /* CounselingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounselingViewController.swift; sourceTree = "<group>"; };
+		44FCEC091EF36B650041599B /* RecordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordViewController.swift; sourceTree = "<group>"; };
+		44FCEC0A1EF36B650041599B /* ReservationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReservationViewController.swift; sourceTree = "<group>"; };
+		44FCEC0B1EF36B650041599B /* SettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		44FCEC1D1EF36EA30041599B /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseTableViewCell.swift; path = TableViewCell/BaseTableViewCell.swift; sourceTree = "<group>"; };
+		44FCEC1F1EF36FC70041599B /* DataTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataTableViewCell.swift; path = TableViewCell/DataTableViewCell.swift; sourceTree = "<group>"; };
+		44FCEC221EF3739C0041599B /* DataViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DataViewCell.xib; path = TableViewCell/DataViewCell.xib; sourceTree = "<group>"; };
+		44FCEC241EF3896F0041599B /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = ../Extension/UIViewController.swift; sourceTree = "<group>"; };
 		687E82B717F57FCD38E66951 /* Pods_Beautefolio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beautefolio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B38E49CAE22A47106C0F47B /* Pods-Beautefolio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beautefolio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Beautefolio/Pods-Beautefolio.debug.xcconfig"; sourceTree = "<group>"; };
 		6D78754329BF6ECED7306ACE /* Pods-Beautefolio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beautefolio.release.xcconfig"; path = "Pods/Target Support Files/Pods-Beautefolio/Pods-Beautefolio.release.xcconfig"; sourceTree = "<group>"; };
@@ -72,10 +88,16 @@
 			isa = PBXGroup;
 			children = (
 				44378E5D1EEFAD8B008E2846 /* GoogleService-Info.plist */,
+				44FCEC261EF38A310041599B /* Extension */,
+				44FCEC031EF36B650041599B /* CounselingViewController.swift */,
+				44FCEC091EF36B650041599B /* RecordViewController.swift */,
+				44FCEC0A1EF36B650041599B /* ReservationViewController.swift */,
+				44FCEC0B1EF36B650041599B /* SettingViewController.swift */,
 				447055961EEE2D32001D1116 /* Main.storyboard */,
 				44D7BD041EF258F9005EC599 /* MainViewController.swift */,
 				44D7BD021EF257D8005EC599 /* SlideViewController.swift */,
 				44D7BD001EF2571A005EC599 /* LeftMenuViewController.swift */,
+				44FCEC211EF36FE40041599B /* TableViewCell */,
 				4400AD931EF287BB006D3330 /* ViewController.swift */,
 				447055A41EEE2E75001D1116 /* LoginViewController.swift */,
 				447055921EEE2D32001D1116 /* AppDelegate.swift */,
@@ -84,6 +106,24 @@
 				4470559E1EEE2D32001D1116 /* Info.plist */,
 			);
 			path = Beautefolio;
+			sourceTree = "<group>";
+		};
+		44FCEC211EF36FE40041599B /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				44FCEC221EF3739C0041599B /* DataViewCell.xib */,
+				44FCEC1D1EF36EA30041599B /* BaseTableViewCell.swift */,
+				44FCEC1F1EF36FC70041599B /* DataTableViewCell.swift */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
+		44FCEC261EF38A310041599B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				44FCEC241EF3896F0041599B /* UIViewController.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 		6B06F57F4F41E014033E4880 /* Frameworks */ = {
@@ -138,6 +178,7 @@
 				TargetAttributes = {
 					4470558E1EEE2D32001D1116 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UH82BGHX4S;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -168,6 +209,7 @@
 				4470559D1EEE2D32001D1116 /* LaunchScreen.storyboard in Resources */,
 				44378E5E1EEFAD8B008E2846 /* GoogleService-Info.plist in Resources */,
 				4470559A1EEE2D32001D1116 /* Assets.xcassets in Resources */,
+				44FCEC231EF3739C0041599B /* DataViewCell.xib in Resources */,
 				447055981EEE2D32001D1116 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -228,11 +270,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				4400AD941EF287BB006D3330 /* ViewController.swift in Sources */,
+				44FCEC181EF36B650041599B /* RecordViewController.swift in Sources */,
 				447055A51EEE2E75001D1116 /* LoginViewController.swift in Sources */,
+				44FCEC1A1EF36B650041599B /* SettingViewController.swift in Sources */,
 				44D7BD011EF2571A005EC599 /* LeftMenuViewController.swift in Sources */,
+				44FCEC1E1EF36EA30041599B /* BaseTableViewCell.swift in Sources */,
 				44D7BD051EF258F9005EC599 /* MainViewController.swift in Sources */,
+				44FCEC251EF3896F0041599B /* UIViewController.swift in Sources */,
+				44FCEC201EF36FC70041599B /* DataTableViewCell.swift in Sources */,
 				447055931EEE2D32001D1116 /* AppDelegate.swift in Sources */,
 				44D7BD031EF257D8005EC599 /* SlideViewController.swift in Sources */,
+				44FCEC121EF36B650041599B /* CounselingViewController.swift in Sources */,
+				44FCEC191EF36B650041599B /* ReservationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +325,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -326,6 +376,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -355,9 +406,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6B38E49CAE22A47106C0F47B /* Pods-Beautefolio.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = UH82BGHX4S;
 				INFOPLIST_FILE = Beautefolio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.tocci14.Beautefolio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -369,9 +423,12 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6D78754329BF6ECED7306ACE /* Pods-Beautefolio.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = UH82BGHX4S;
 				INFOPLIST_FILE = Beautefolio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.tocci14.Beautefolio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
