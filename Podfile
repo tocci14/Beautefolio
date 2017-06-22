@@ -11,5 +11,8 @@ target 'Beautefolio' do
   pod 'Firebase/Database'
   pod 'SVProgressHUD'
   pod 'SlideMenuControllerSwift', '~> 3.0'
+  pod 'JSQMessagesViewController'
+  pod 'CVCalendar'
+  pod 'PagingMenuController'
 
 end

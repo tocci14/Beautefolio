@@ -7,13 +7,18 @@
 //
 
 import UIKit
+import Firebase
+import SlideMenuControllerSwift
+import CVCalendar
 
 class RecordViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        self.navigationController?.navigationBar.isHidden = false
+        self.navigationItem.title = "お客様カルテ"
+        addLeftBarButtonWithImage(UIImage(named: "menu")!)
     }
 
     override func didReceiveMemoryWarning() {

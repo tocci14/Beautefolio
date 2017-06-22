@@ -1,17 +1,11 @@
-//
 //  LeftMenuViewController.swift
 //  Beautefolio
-//
-//  Created by Hisashi Sugimoto on 2017/06/15.
-//  Copyright © 2017年 tocci14. All rights reserved.
-//
 
 
 import UIKit
 import Firebase
 import SlideMenuControllerSwift
 
-    
     enum LeftMenu: Int {
         case home = 0
         case reservation
@@ -27,6 +21,7 @@ import SlideMenuControllerSwift
     class LeftMenuViewController : UIViewController, LeftMenuProtocol {
         
         @IBOutlet weak var tableView: UITableView!
+        
         var menus = ["ホーム", "予約リスト", "お客様カルテ", "カウンセリング", "設定"]
         var mainViewController: UIViewController!
         var reservationViewController: UIViewController!
@@ -54,10 +49,7 @@ import SlideMenuControllerSwift
             self.counselingViewController = UINavigationController(rootViewController: counselingViewController)
             
             let settingViewController = storyboard.instantiateViewController(withIdentifier: "Setting") as! SettingViewController
-            //settingViewController.delegate = self
             self.settingViewController = UINavigationController(rootViewController: settingViewController)
-            
-            // self.tableView.registerCellClass(BaseTableViewCell.self)
             
             self.tableView.dataSource = self
             self.tableView.delegate = self
@@ -69,7 +61,6 @@ import SlideMenuControllerSwift
         
         override func viewDidLayoutSubviews() {
             super.viewDidLayoutSubviews()
-            
             self.view.layoutIfNeeded()
         }
         
@@ -108,7 +99,6 @@ import SlideMenuControllerSwift
         
         func scrollViewDidScroll(_ scrollView: UIScrollView) {
             if self.tableView == scrollView {
-                
             }
         }
     }
@@ -125,23 +115,20 @@ import SlideMenuControllerSwift
                 switch menu {
                 case .home, .reservation, .record, .counseling, .setting:
                     
-                    var cell: UITableViewCell?
+                    var cell:UITableViewCell? =  tableView.dequeueReusableCell(withIdentifier: "Cell")
                     
                     if cell == nil {
                         cell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "Cell")
-                    }else {
+                    } else {
                         cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
                         
                     }
                     
                     cell?.textLabel?.text = menus[indexPath.row]
                     
-                //let cell = BaseTableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: BaseTableViewCell.identifier)
-                  //  cell.setData(menus[indexPath.row])
                     return cell!
                 }
             }
             return UITableViewCell()
         }
-
 }

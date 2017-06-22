@@ -1,10 +1,6 @@
-//
 //  MainViewController.swift
 //  Beautefolio
-//
-//  Created by Hisashi Sugimoto on 2017/06/15.
-//  Copyright © 2017年 tocci14. All rights reserved.
-//
+
 
 import Firebase
 import FirebaseAuth
@@ -37,7 +33,6 @@ class MainViewController: UIViewController {
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)
     }
-
 }
 
 

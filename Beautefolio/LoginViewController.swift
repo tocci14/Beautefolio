@@ -1,10 +1,6 @@
-//
 //  LoginViewController.swift
 //  Beautefolio
-//
-//  Created by Hisashi Sugimoto on 2017/06/12.
-//  Copyright © 2017年 tocci14. All rights reserved.
-//
+
 
 import UIKit
 import Firebase
@@ -42,10 +38,7 @@ class LoginViewController: UIViewController {
                 
                 // 画面を閉じてViewControllerに戻る
                 self.dismiss(animated: true, completion: nil)
-
-                
                 }
-
             }
         }
     }
@@ -92,7 +85,7 @@ class LoginViewController: UIViewController {
                 } else {
                     print("DEBUG_PRINT: displayNameの設定にに失敗しました。")
                 }
-                }
+            }
         }
     }
     override func viewDidLoad() {
@@ -105,16 +98,4 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

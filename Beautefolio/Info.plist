@@ -26,14 +26,18 @@
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
-		<string>armv7</string>
+	<string>armv7</string>
 	</array>
 	<key>UIRequiresFullScreen</key>
 	<false/>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
+	<string>UIInterfaceOrientationLandscapeLeft</string>
+	<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>"Beautefolio"がカメラのアクセスを求めています </string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>"Beautefolio"がライブラリへののアクセスを求めています </string>
 </dict>
 </plist>
