@@ -5,21 +5,15 @@
 import UIKit
 import Firebase
 import SlideMenuControllerSwift
-import CVCalendar
 
-class HomeViewController: UIViewController  {
-    
-    
+class HomeViewController: MainViewController  {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.navigationController?.navigationBar.isHidden = false
         self.navigationItem.title = "ホーム"
         addLeftBarButtonWithImage(UIImage(named: "menu")!)
-        
-        
-        
     }
     
     override func viewDidLayoutSubviews() {

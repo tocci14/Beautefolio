@@ -18,19 +18,18 @@ class MainViewController: UIViewController {
             // viewDidAppear内でpresent()を呼び出しても表示されないためメソッドが終了してから呼ばれるようにする
             DispatchQueue.main.async {
                 let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "Login")
-               self.present(loginViewController!, animated: true, completion: nil)
+               //self.present(loginViewController!, animated: true, completion: nil)
             }
 
         self.navigationController?.navigationBar.isHidden = false
-        self.navigationItem.title = "Beautefolio"
         addLeftBarButtonWithImage(UIImage(named: "menu")!)
             
         // 2秒経ったらHomeViewControllerに画面遷移したい
         //self.perform(#selector(showVC), with: nil, afterDelay: 2.0)
-            func showVC() {
+            /*func showVC() {
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
                 self.present(vc!, animated: true, completion: nil)
-            }
+            }*/
         }
 
     }

@@ -15,8 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Override point for customization after application launch.
         FIRApp.configure()
-        /*let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let mainVC = storyboard.instantiateViewController(withIdentifier: "Main")
+      
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let mainVC = storyboard.instantiateViewController(withIdentifier: "Home")
         let leftVC = storyboard.instantiateViewController(withIdentifier: "Left")
         let navigationController = UINavigationController(rootViewController: mainVC)
         let slideMenuController = SlideMenuController(mainViewController: navigationController, leftMenuViewController: leftVC)
@@ -25,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //SlideMenuOptions.contentViewScale = 0.8
         
         self.window?.rootViewController = slideMenuController
-        self.window?.makeKeyAndVisible()*/
+        self.window?.makeKeyAndVisible()
         return true
     }
 }

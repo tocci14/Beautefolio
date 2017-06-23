@@ -12,7 +12,6 @@
 		442C927F1EF678720063A43D /* CalenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 442C927E1EF678720063A43D /* CalenderViewController.swift */; };
 		44378E5E1EEFAD8B008E2846 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 44378E5D1EEFAD8B008E2846 /* GoogleService-Info.plist */; };
 		4459ACE21EF9003C00E758BC /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459ACE11EF9003C00E758BC /* ChatViewController.swift */; };
-		4459ACE41EF906DD00E758BC /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459ACE31EF906DD00E758BC /* MyPageViewController.swift */; };
 		4459ACEE1EFA178E00E758BC /* SettingMenuViewController_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459ACEB1EFA178E00E758BC /* SettingMenuViewController_1.swift */; };
 		4459ACEF1EFA178E00E758BC /* SettingMenuViewController_2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459ACEC1EFA178E00E758BC /* SettingMenuViewController_2.swift */; };
 		4459ACF01EFA178E00E758BC /* SettingMenuViewController_3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459ACED1EFA178E00E758BC /* SettingMenuViewController_3.swift */; };
@@ -45,7 +44,6 @@
 		442C927E1EF678720063A43D /* CalenderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalenderViewController.swift; sourceTree = "<group>"; };
 		44378E5D1EEFAD8B008E2846 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4459ACE11EF9003C00E758BC /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
-		4459ACE31EF906DD00E758BC /* MyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		4459ACEB1EFA178E00E758BC /* SettingMenuViewController_1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingMenuViewController_1.swift; sourceTree = "<group>"; };
 		4459ACEC1EFA178E00E758BC /* SettingMenuViewController_2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingMenuViewController_2.swift; sourceTree = "<group>"; };
 		4459ACED1EFA178E00E758BC /* SettingMenuViewController_3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingMenuViewController_3.swift; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 				44FCEC0A1EF36B650041599B /* ReservationViewController.swift */,
 				44FCEC0B1EF36B650041599B /* SettingViewController.swift */,
 				447055961EEE2D32001D1116 /* Main.storyboard */,
-				4459ACE31EF906DD00E758BC /* MyPageViewController.swift */,
 				4459ACEB1EFA178E00E758BC /* SettingMenuViewController_1.swift */,
 				4459ACEC1EFA178E00E758BC /* SettingMenuViewController_2.swift */,
 				4459ACF11EFA294400E758BC /* StaffCollectionViewCell.swift */,
@@ -304,7 +301,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4459ACF21EFA294400E758BC /* StaffCollectionViewCell.swift in Sources */,
-				4459ACE41EF906DD00E758BC /* MyPageViewController.swift in Sources */,
 				4400AD941EF287BB006D3330 /* ViewController.swift in Sources */,
 				44BACCB81EF773F9005922F4 /* CustomUICollectionViewCell.swift in Sources */,
 				44BACCBC1EF7C181005922F4 /* CustomCell.swift in Sources */,

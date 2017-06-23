@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="TRP-Oc-rpz">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="5zo-EK-WHU">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -224,12 +224,39 @@
                     <view key="view" contentMode="scaleToFill" id="7Ne-yw-V0A">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PqZ-oV-D45">
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0On-Yy-jPk">
+                                <segments>
+                                    <segment title="メニュー"/>
+                                    <segment title="スタッフ"/>
+                                    <segment title="カルテデータ"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedChanged:" destination="nIZ-Wm-V8S" eventType="valueChanged" id="LoF-wq-fok"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PqZ-oV-D45" firstAttribute="leading" secondItem="7Ne-yw-V0A" secondAttribute="leading" id="4kW-sk-6rF"/>
+                            <constraint firstItem="PqZ-oV-D45" firstAttribute="bottom" secondItem="R2q-Rt-xqi" secondAttribute="top" id="BdP-Xp-Def"/>
+                            <constraint firstItem="0On-Yy-jPk" firstAttribute="top" secondItem="b2I-Nc-74B" secondAttribute="bottom" constant="15" id="Dyq-VN-2xC"/>
+                            <constraint firstItem="PqZ-oV-D45" firstAttribute="top" secondItem="0On-Yy-jPk" secondAttribute="bottom" constant="15" id="IKZ-OP-Fi8"/>
+                            <constraint firstItem="PqZ-oV-D45" firstAttribute="centerX" secondItem="0On-Yy-jPk" secondAttribute="centerX" id="LAA-i1-Goa"/>
+                            <constraint firstItem="0On-Yy-jPk" firstAttribute="leading" secondItem="7Ne-yw-V0A" secondAttribute="leadingMargin" constant="30" id="fvT-OO-OQQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0On-Yy-jPk" secondAttribute="trailing" constant="30" id="pXg-oV-8fK"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="contentView" destination="PqZ-oV-D45" id="0BO-4G-CsZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gSy-eI-ear" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4437" y="218"/>
+            <point key="canvasLocation" x="4436.71875" y="217.96875"/>
         </scene>
         <!--Setting Menu View Controller1-->
         <scene sceneID="Vcw-WH-Be2">
@@ -245,14 +272,21 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Aqt-Ga-D8Y">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="r7M-pc-CI4" id="oNm-wK-zmP"/>
+                                    <outlet property="delegate" destination="r7M-pc-CI4" id="7cH-PT-Vde"/>
+                                </connections>
                             </tableView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="メニューを追加してください" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pac-cQ-mNJ">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="860" id="gpw-G3-qGg"/>
+                                    <constraint firstAttribute="width" constant="920" id="gpw-G3-qGg"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="r7M-pc-CI4" id="CZM-oF-bjV"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRQ-UX-JbV">
                                 <state key="normal" image="plus"/>
@@ -263,16 +297,16 @@
                         </subviews>
                         <color key="backgroundColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Pac-cQ-mNJ" firstAttribute="top" secondItem="mUj-lH-OXd" secondAttribute="bottom" constant="30" id="03x-yW-04j"/>
-                            <constraint firstItem="Aqt-Ga-D8Y" firstAttribute="top" secondItem="Pac-cQ-mNJ" secondAttribute="bottom" constant="20" id="2c2-GS-DI4"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="sRQ-UX-JbV" secondAttribute="trailing" constant="50" id="Hpb-ZX-0aY"/>
-                            <constraint firstItem="Aqt-Ga-D8Y" firstAttribute="top" secondItem="sRQ-UX-JbV" secondAttribute="bottom" constant="20" id="TSh-ip-33G"/>
+                            <constraint firstItem="Pac-cQ-mNJ" firstAttribute="top" secondItem="mUj-lH-OXd" secondAttribute="bottom" constant="15" id="03x-yW-04j"/>
+                            <constraint firstItem="Aqt-Ga-D8Y" firstAttribute="top" secondItem="Pac-cQ-mNJ" secondAttribute="bottom" constant="5" id="2c2-GS-DI4"/>
+                            <constraint firstItem="Pac-cQ-mNJ" firstAttribute="leading" secondItem="iPx-4T-1bW" secondAttribute="leadingMargin" constant="30" id="Igo-GD-UTl"/>
+                            <constraint firstItem="Aqt-Ga-D8Y" firstAttribute="top" secondItem="sRQ-UX-JbV" secondAttribute="bottom" constant="5" id="TSh-ip-33G"/>
+                            <constraint firstItem="pxW-h7-oEr" firstAttribute="top" secondItem="Aqt-Ga-D8Y" secondAttribute="bottom" constant="30" id="Vgj-de-a65"/>
                             <constraint firstItem="Aqt-Ga-D8Y" firstAttribute="leading" secondItem="Pac-cQ-mNJ" secondAttribute="leading" id="WUb-aE-iQX"/>
-                            <constraint firstItem="Aqt-Ga-D8Y" firstAttribute="top" secondItem="sRQ-UX-JbV" secondAttribute="bottom" constant="20" id="Y25-vR-jwP"/>
-                            <constraint firstItem="Pac-cQ-mNJ" firstAttribute="leading" secondItem="iPx-4T-1bW" secondAttribute="leadingMargin" constant="50" id="Ys3-gI-6wA"/>
-                            <constraint firstItem="pxW-h7-oEr" firstAttribute="top" secondItem="Aqt-Ga-D8Y" secondAttribute="bottom" constant="50" id="aPg-vo-8ja"/>
-                            <constraint firstItem="pxW-h7-oEr" firstAttribute="top" secondItem="Aqt-Ga-D8Y" secondAttribute="bottom" constant="50" id="uAn-SU-YtI"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Aqt-Ga-D8Y" secondAttribute="trailing" constant="50" id="vms-oQ-Ikn"/>
+                            <constraint firstItem="Aqt-Ga-D8Y" firstAttribute="top" secondItem="sRQ-UX-JbV" secondAttribute="bottom" constant="5" id="Y25-vR-jwP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sRQ-UX-JbV" secondAttribute="trailing" constant="30" id="dxI-io-rop"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Aqt-Ga-D8Y" secondAttribute="trailing" constant="30" id="s5O-lG-EZ7"/>
+                            <constraint firstItem="Aqt-Ga-D8Y" firstAttribute="leading" secondItem="iPx-4T-1bW" secondAttribute="leadingMargin" constant="30" id="ucR-2m-duO"/>
                         </constraints>
                     </view>
                     <connections>
@@ -316,7 +350,7 @@
                                                     <frame key="frameInset" minX="60" minY="39" width="80" height="80"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="スタッフのお名前" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uT8-ca-QOl">
+                                                <textField opaque="NO" clipsSubviews="YES" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="スタッフのお名前" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uT8-ca-QOl">
                                                     <frame key="frameInset" minX="30" minY="139" width="140" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <nil key="textColor"/>
@@ -330,12 +364,11 @@
                                                         <action selector="workSwitch:" destination="sjQ-5C-M4r" eventType="valueChanged" id="ELh-zA-WsQ"/>
                                                     </connections>
                                                 </switch>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZl-Lp-Xwt">
+                                                <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mZl-Lp-Xwt">
                                                     <frame key="frameInset" minX="60" minY="39" width="80" height="80"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <connections>
                                                         <action selector="AddPic:" destination="sjQ-5C-M4r" eventType="touchUpInside" id="BRY-u3-XzF"/>
-                                                        <action selector="addPic:" destination="sjQ-5C-M4r" eventType="touchUpInside" id="vmG-gk-hic"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -346,6 +379,10 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="g4I-uq-5VW" id="A33-MW-j9j"/>
+                                    <outlet property="delegate" destination="g4I-uq-5VW" id="bRl-6t-3bx"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="0.96862745100000003" green="0.96078431369999995" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -356,9 +393,6 @@
                             <constraint firstItem="Num-1S-EMl" firstAttribute="top" secondItem="o8K-kS-4MO" secondAttribute="bottom" constant="80" id="dTt-DR-MMi"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="staffCollectionView" destination="Num-1S-EMl" id="X22-zm-MEM"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zux-9u-WaR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -595,7 +629,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="calendarMenuView" destination="rM5-GA-Dhi" id="07V-7d-hAC"/>
                         <outlet property="calendarView" destination="tA4-tX-a5p" id="8zr-K7-Ywo"/>
                         <outlet property="menuView" destination="rM5-GA-Dhi" id="uxB-UN-Iex"/>
                         <outlet property="monthLabel" destination="H9t-vv-Wam" id="B5p-2t-1di"/>

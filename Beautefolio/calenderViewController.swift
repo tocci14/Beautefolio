@@ -8,6 +8,10 @@ import FirebaseAuth
 import FirebaseDatabase
 import CVCalendar
 
+// https://cocoapods.org/pods/CVCalendar
+// CVCalendarのdemoのサンプルコードから作成しています。
+// https://github.com/CVCalendar/CVCalendar/blob/master/CVCalendar%20Demo/CVCalendar%20Demo/ViewController.swift
+
 class CalenderViewController: UIViewController {
     
     struct Color {

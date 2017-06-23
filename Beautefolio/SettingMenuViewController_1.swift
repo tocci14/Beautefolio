@@ -8,8 +8,7 @@ import FirebaseDatabase
 import FirebaseAuth
 import PagingMenuController
 
-// メニューを追加してTableViewにメニューリストを並べたい
-// http://www.dcom-web.co.jp/technology/swift5/
+
 private let unselectedRow = -1
 
 class SettingMenuViewController_1: UIViewController,UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
@@ -22,6 +21,7 @@ class SettingMenuViewController_1: UIViewController,UITableViewDelegate, UITable
     @IBAction func tapSubmitButton(_ sender: UIButton) {
         applyMenu()
     }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return menuList.count
@@ -50,6 +50,18 @@ class SettingMenuViewController_1: UIViewController,UITableViewDelegate, UITable
         return true
     }
     
+    // セルをスワイプで削除する機能がエラーに
+    /*func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        
+        let deleteButton: UITableViewRowAction = UITableViewRowAction(style: .normal, title: "削除") { (action, index) -> Void in
+            self.array.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+        deleteButton.backgroundColor = UIColor.red
+        
+        return [deleteButton]
+    }*/
+    
     func applyMenu() {
         if editMenuField.text == nil {
             return
@@ -70,6 +82,10 @@ class SettingMenuViewController_1: UIViewController,UITableViewDelegate, UITable
 
         settingMenuTableView.register(UITableViewCell.self, forCellReuseIdentifier: "Cell")
         editMenuField.becomeFirstResponder()
+        
+        //self.editMenuField.dataSource = self
+        self.editMenuField.delegate = self
+
     }
 
     override func didReceiveMemoryWarning() {

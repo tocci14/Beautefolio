@@ -43,6 +43,21 @@ class StaffCollectionViewCell: UICollectionViewCell, UIImagePickerControllerDele
             pickerController.delegate = self
             pickerController.sourceType = UIImagePickerControllerSourceType.photoLibrary
             //self.present(pickerController, animated: true, completion: nil)
+            
+            /*if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.photoLibrary) {
+                
+                let picker = UIImagePickerController()
+                picker.modalPresentationStyle = UIModalPresentationStyle.popover
+                picker.delegate = self // UINavigationControllerDelegate と　UIImagePickerControllerDelegateを実装する
+                picker.sourceType = UIImagePickerControllerSourceType.photoLibrary
+                
+                if let popover = picker.popoverPresentationController {
+                    popover.sourceView = self.view
+                    popover.sourceRect = loadImageButton.frame // ポップオーバーの表示元となるエリア
+                    popover.permittedArrowDirections = UIPopoverArrowDirection.any
+                }
+                self.present(picker, animated: true, completion: nil)
+            }*/
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
@@ -55,9 +70,27 @@ class StaffCollectionViewCell: UICollectionViewCell, UIImagePickerControllerDele
             
         //let imgRef = image.cgImage?.cropping(to: CGRect)
         //let image = UIImage(cgImage: imgRef!, scale: image.scale, orientation: image.imageOrientation)
+        /*func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+            
+            if let staffImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+                // pickedImageが読み込まれた画像なので、あとはお好きに
+            }
+            picker.dismiss(animated: true, completion: nil)
+        }*/
         }
+        /*if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
+            
+            let picker = UIImagePickerController()
+            picker.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+            picker.delegate = self　// UINavigationControllerDelegate と　UIImagePickerControllerDelegateを実装する
+            picker.sourceType = UIImagePickerControllerSourceType.camera
+            
+            self.present(picker, animated: true, completion: nil)
+        }*/
     }
     
+    
+ 
     @IBAction func workSwitch(_ sender: UISwitch) {
         if ( sender.isOn ) {
             

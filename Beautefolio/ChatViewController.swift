@@ -16,7 +16,7 @@ class ChatViewController: JSQMessagesViewController {
         super.viewDidLoad()
         
         senderDisplayName = "A"
-        senderId = FIRAuth.auth()?.currentUser?.uid
+        senderId = FIRAuth.auth()?.currentUser?.uid ?? "test"
         let ref = FIRDatabase.database().reference()
         ref.observe(.value, with: { snapshot in
             guard let dic = snapshot.value as? Dictionary<String, AnyObject> else {

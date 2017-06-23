@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>CVCalendar.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>GTMSessionFetcher.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +18,21 @@
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+		<key>JSQMessagesViewController.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>JSQSystemSoundPlayer.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>PagingMenuController.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>9</integer>
 		</dict>
 		<key>Pods-Beautefolio.xcscheme</key>
 		<dict>
@@ -47,12 +67,47 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>169DE05996A32629A37BE4288A54B1D3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>51DFF84E9CB30A18F02B4C0DB2EBEA84</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>571A3CE04BE6A0B7E095526C4824F676</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6ADB3656BDFD85FB77E0CAB44BFF61E6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8DFFD6AB619A0E3B571707CEC933A640</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>C052BEBFBD0AB5218CC64BA3450F6547</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C7DCF2B547F7871B9BFD74DE93B0E173</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D0581AF7BF4A6DA140D280B19ECC7BFF</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F6204A345A37C6CEE4D4E8E67F6A48C5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
