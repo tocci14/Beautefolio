@@ -44,7 +44,7 @@ PODS:
   - SVProgressHUD (2.1.2)
 
 DEPENDENCIES:
-  - CVCalendar
+  - CVCalendar (~> 1.5)
   - Firebase (= 3.17.0)
   - Firebase/Auth
   - Firebase/Database
@@ -69,6 +69,6 @@ SPEC CHECKSUMS:
   SlideMenuControllerSwift: 9a163b16d54afab734add42858cba7ef7c307755
   SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
 
-PODFILE CHECKSUM: c5130ac03ee7561c8bbf244a21fc010b3a345958
+PODFILE CHECKSUM: ff409ee222c3aec7342c1faac64f84f03acd66ec
 
 COCOAPODS: 1.1.1

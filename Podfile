@@ -12,7 +12,7 @@ target 'Beautefolio' do
   pod 'SVProgressHUD'
   pod 'SlideMenuControllerSwift', '~> 3.0'
   pod 'JSQMessagesViewController'
-  pod 'CVCalendar'
+  pod 'CVCalendar', '~> 1.5'
   pod 'PagingMenuController'
 
 end
