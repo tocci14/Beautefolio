@@ -9,9 +9,6 @@ import SlideMenuControllerSwift
 
 class MainViewController: UIViewController {
     
-    @IBAction func MenuButton(_ sender: UIButton) {
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,8 +22,15 @@ class MainViewController: UIViewController {
             }
 
         self.navigationController?.navigationBar.isHidden = false
-        self.navigationItem.title = "ホーム"
+        self.navigationItem.title = "Beautefolio"
         addLeftBarButtonWithImage(UIImage(named: "menu")!)
+            
+        // 2秒経ったらHomeViewControllerに画面遷移したい
+        //self.perform(#selector(showVC), with: nil, afterDelay: 2.0)
+            func showVC() {
+                let vc = self.storyboard?.instantiateViewController(withIdentifier: "Home")
+                self.present(vc!, animated: true, completion: nil)
+            }
         }
 
     }

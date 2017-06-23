@@ -57,7 +57,7 @@ class ChatViewController: JSQMessagesViewController {
     override func collectionView(_ collectionView: JSQMessagesCollectionView!, messageBubbleImageDataForItemAt indexPath: IndexPath) -> JSQMessageBubbleImageDataSource? {
         if messages[indexPath.row].senderId == senderId {
             return JSQMessagesBubbleImageFactory().outgoingMessagesBubbleImage(
-                with: UIColor(red: 112/255, green: 192/255, blue:  75/255, alpha: 1))
+                with: UIColor(red: 163/255, green: 113/255, blue:  255/255, alpha: 1))
         } else {
             return JSQMessagesBubbleImageFactory().incomingMessagesBubbleImage(
                 with: UIColor(red: 229/255, green: 229/255, blue: 229/255, alpha: 1))

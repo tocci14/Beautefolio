@@ -4,8 +4,12 @@
 
 import UIKit
 import Firebase
+import FirebaseDatabase
+import FirebaseAuth
 import PagingMenuController
 
+// メニューを追加してTableViewにメニューリストを並べたい
+// http://www.dcom-web.co.jp/technology/swift5/
 private let unselectedRow = -1
 
 class SettingMenuViewController_1: UIViewController,UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {

@@ -23,7 +23,7 @@ import SlideMenuControllerSwift
         @IBOutlet weak var tableView: UITableView!
         
         var menus = ["ホーム", "予約リスト", "お客様カルテ", "カウンセリング", "設定"]
-        var mainViewController: UIViewController!
+        var homeViewController: UIViewController!
         var reservationViewController: UIViewController!
         var recordViewController: UIViewController!
         var counselingViewController: UIViewController!
@@ -67,7 +67,7 @@ import SlideMenuControllerSwift
         func changeViewController(_ menu: LeftMenu) {
             switch menu {
             case .home:
-                self.slideMenuController()?.changeMainViewController(self.mainViewController, close: true)
+                self.slideMenuController()?.changeMainViewController(self.homeViewController, close: true)
             case .reservation:
                 self.slideMenuController()?.changeMainViewController(self.reservationViewController, close: true)
             case .record:
